@@ -1,0 +1,51 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      
+      <div *ngIf="isLogged" class="card bg-dark text-white border-secondary shadow-lg">
+        <div class="card-header border-secondary bg-transparent text-center py-4">
+          <div class="rounded-circle bg-info d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <span class="fs-1">👤</span>
+          </div>
+          <h2 class="h4 fw-bold text-info">Perfil de Usuario</h2>
+          <span class="badge bg-success">Cuenta Activa</span>
+        </div>
+        
+        <div class="card-body p-4">
+          <div class="mb-3">
+            <label class="text-info small fw-bold uppercase">Nombre Completo</label>
+            <p class="text-light fs-5">Administrador RAMcore</p>
+          </div>
+          <div class="mb-3">
+            <label class="text-info small fw-bold uppercase">Correo Electrónico</label>
+            <p class="text-light">admin@ramcore.com</p>
+          </div>
+          <div class="mb-4">
+            <label class="text-info small fw-bold uppercase">Tipo de Cliente</label>
+            <p class="text-light">Socio Premium Hardware</p>
+          </div>
+          
+          <div class="d-grid gap-2">
+            <a routerLink="/dashboard" class="btn btn-info fw-bold text-dark">Ir al Panel de Control</a>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!isLogged" class="card bg-dark text-white border-info shadow-lg text-center p-5">
+        <div class="mb-4">
+          <span class="fs-1">🔒</span>
+        </div>
+        <h2 class="fw-bold text-white mb-3">Acceso Restringido</h2>
+        <p class="text-light mb-4">
+          Para ver los detalles de tu cuenta, historial de pedidos y beneficios de RAMcore, necesitas iniciar sesión.
+        </p>
+        <div class="d-grid">
+          <a routerLink="/login" class="btn btn-outline-info fw-bold px-5" style="border-radius: 8px;">
+            Iniciar Sesión ahora
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="container my-5">
+  <div class="row mb-4">
+    <div class="col-12 d-flex justify-content-between align-items-center bg-dark text-white p-4 rounded shadow-sm">
+      <div>
+        <h1 class="h3 text-info fw-bold mb-1">¡Bienvenido de vuelta, {{ userName }}!</h1>
+        <p class="text-muted small mb-0">Sesión iniciada el: {{ lastLogin | date:'medium' }}</p>
+      </div>
+      <button (click)="logout()" class="btn btn-outline-danger fw-bold btn-sm px-3" style="border-radius: 8px;">
+  Cerrar Sesión
+</button>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-4">
+    <div class="col-12 col-md-4">
+      <div class="card bg-dark text-white border-secondary h-100 shadow-sm">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted uppercase">Rol de Usuario</h6>
+          <h5 class="card-title text-info fw-bold">{{ userRole }}</h5>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-4">
+      <div class="card bg-dark text-white border-secondary h-100 shadow-sm">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted uppercase">Ventas del Mes</h6>
+          <h5 class="card-title text-success fw-bold">{{ totalVentas | currency:'USD':'symbol':'1.0-0' }}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card bg-dark text-white border-secondary h-100 shadow-sm">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted uppercase">Items en Catálogo</h6>
+          <h5 class="card-title text-warning fw-bold">{{ productosActivos }} Productos</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-dark text-white p-4 rounded shadow-sm border border-secondary">
+        <h4 class="text-info mb-3 h5 fw-bold">Acciones Rápidas del Sistema</h4>
+        <div class="table-responsive">
+          <table class="table table-dark table-hover mb-0 align-middle small">
+            <thead>
+              <tr class="text-muted border-secondary">
+                <th>Módulo</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-secondary">
+                <td class="fw-bold text-info">Inventario REST</td>
+                <td>Sincronizado dinámicamente con JSON Server.</td>
+                <td><span class="badge bg-success">Online</span></td>
+              </tr>
+              <tr class="border-secondary">
+                <td class="fw-bold text-info">Guard de Seguridad</td>
+                <td>Filtro de rutas mediante LocalStorage activo.</td>
+                <td><span class="badge bg-success">Protegido</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

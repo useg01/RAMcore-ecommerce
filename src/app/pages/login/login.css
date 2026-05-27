@@ -1,0 +1,10 @@
+.form-control:focus {
+  background-color: rgba(0, 229, 255, 0.05) !important;
+  border-color: #00e5ff !important;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.25);
+  color: white !important;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}

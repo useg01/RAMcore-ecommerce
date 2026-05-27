@@ -1,0 +1,52 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Procesador Ryzen 5 5600G",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMKC0eZMkSl8GLIzXfJFH-qFVsQ5Aerr5CA&s",
+      "categoria": "Procesadores",
+      "precio": 650,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "nombre": "Tarjeta de Video RTX 4060",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSfSCtsVJ69UGG7GYN9faLDOizg8Ai798hg&s",
+      "categoria": "Componentes",
+      "precio": 1450,
+      "stock": 5
+    },
+    {
+      "id": 3,
+      "nombre": "Memoria RAM 16GB DDR4",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVIkEPtfbCRSFx1FBw3erMDHxm6q3LNOCng&s",
+      "categoria": "Componentes",
+      "precio": 180,
+      "stock": 25
+    },
+    {
+      "id": 4,
+      "nombre": "SSD M.2 NVMe 1TB Kingston",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZpP-XTvYsMUz3xfo6yVn-08F1wHZe7b6Jg&s",
+      "categoria": "Almacenamiento",
+      "precio": 240,
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "nombre": "Laptop Gamer Victus 15",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDPmyktQ3-YsDVBDeLEtuP0bNe9l8FBeVUww&s",
+      "categoria": "Tecnología",
+      "precio": 3200,
+      "stock": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Monitor LG 24'' 144Hz",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_965343-MLA99460670018_112025-O.webp",
+      "categoria": "Tecnología",
+      "precio": 750,
+      "stock": 0
+    }
+  ]
+}
