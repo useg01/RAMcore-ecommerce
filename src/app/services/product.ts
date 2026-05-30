@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
   private http = inject(HttpClient);
-  private url = 'http://localhost:3000/productos'; 
+  private url = 'https://6a1a31f7bc2f94475491c285.mockapi.io/api/v1/productos'; 
 
   getProducts(): Observable<any[]> {
     return this.http.get<any[]>(this.url);
