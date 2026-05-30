@@ -24,7 +24,7 @@ export class Productos implements OnInit {
   }
 
   obtenerProductos() {
-    this.http.get<any[]>('http://localhost:3000/productos').subscribe({
+    this.http.get<any[]>('https://6a1a31f7bc2f94475491c285.mockapi.io/api/v1/productos').subscribe({
       next: (data) => {
         this.listaProductos = data;
         this.productosFiltrados = data; 
